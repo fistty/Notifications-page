@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="Notificaiton.css" />
+    <script defer src="app.js"></script>
+    <title>Notifications page | Frontend Mentor</title>
+  </head>
+  <body>
+    <header>
+      <h1>Notifications<span class="notif-count">3</span></h1>
+
+      <button class="notif-button">Mark all as read</button>
+    </header>
+
+    <main>
+      <div class="notif-item unread">
+        <div class="notif-item-profile-img-container">
+          <img src="./images/avatar-mark-webber.webp" alt="image" />
+        </div>
+        <div class="text-container">
+          <p class="profile-name">Mark Webber</p>
+          <p class="notif-type">reacted to your recent post</p>
+          <p class="notif-message">My first tournament today!</p>
+          <i class="red-dot"
+            ><svg
+              style="fill: red"
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 512 512">
+              <title>ionicons-v5-q</title>
+              <path
+                d="M256,464C141.31,464,48,370.69,48,256S141.31,48,256,48s208,93.31,208,208S370.69,464,256,464Z" />
+            </svg>
+          </i>
+          <div class="notif-time">1m ago</div>
+        </div>
+      </div>
+
+      <div class="notif-item unread">
+        <div class="notif-item-profile-img-container">
+          <img src="./images/avatar-angela-gray.webp" alt="image" />
+        </div>
+        <div class="text-container">
+          <p class="profile-name">Angela Gray</p>
+          <p class="notif-type">followed you</p>
+          <i class="red-dot"
+            ><svg
+              style="fill: red"
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 512 512">
+              <title>ionicons-v5-q</title>
+              <path
+                d="M256,464C141.31,464,48,370.69,48,256S141.31,48,256,48s208,93.31,208,208S370.69,464,256,464Z" />
+            </svg>
+          </i>
+          <div class="notif-time">5m ago</div>
+        </div>
+      </div>
+
+      <div class="notif-item unread">
+        <div class="notif-item-profile-img-container">
+          <img src="./images/avatar-jacob-thompson.webp" alt="image" />
+        </div>
+        <div class="text-container">
+          <p class="profile-name">Jacob Thompson</p>
+          <p class="notif-type">has joined your group</p>
+          <p class="notif-group-message">Chess Club</p>
+          <i class="red-dot"
+            ><svg
+              style="fill: red"
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 512 512">
+              <title>ionicons-v5-q</title>
+              <path
+                d="M256,464C141.31,464,48,370.69,48,256S141.31,48,256,48s208,93.31,208,208S370.69,464,256,464Z" />
+            </svg>
+          </i>
+          <div class="notif-time">1 day ago</div>
+        </div>
+      </div>
+
+      <div class="notif-item">
+        <div class="notif-item-profile-img-container">
+          <img src="./images/avatar-rizky-hasanuddin.webp" alt="image" />
+        </div>
+        <div class="text-container">
+          <p class="profile-name">Rizky Hasanuddin</p>
+          <p class="notif-type">sent you a private message</p>
+          <div class="notif-time">5days ago</div>
+          <div class="private-message-container">
+            <p class="notif-private-message">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="notif-item notif-item-picture">
+        <div class="notif-item-profile-img-container">
+          <img src="./images/avatar-kimberly-smith.webp" alt="image" />
+        </div>
+        <div class="text-container">
+          <p class="profile-name">Kimberly Smith</p>
+          <p class="notif-type">commented on your picture</p>
+          <p class="notif-message"></p>
+          <div class="notif-time">1 week ago</div>
+        </div>
+        <div class="notif-image-container">
+          <img src="./images/image-chess.webp" alt="image" />
+        </div>
+      </div>
+
+      <div class="notif-item">
+        <div class="notif-item-profile-img-container">
+          <img src="./images/avatar-nathan-peterson.webp" alt="image" />
+        </div>
+        <div class="text-container">
+          <p class="profile-name">Nathan Peterson</p>
+          <p class="notif-type">reacted to your recent post</p>
+          <p class="notif-message">
+            5 end-game strategies to increase your win rate
+          </p>
+          <div class="notif-time">2 weeks ago</div>
+        </div>
+      </div>
+
+      <div class="notif-item">
+        <div class="notif-item-profile-img-container">
+          <img src="./images/avatar-anna-kim.webp" alt="image" />
+        </div>
+        <div class="text-container">
+          <p class="profile-name">Anna Kim</p>
+          <p class="notif-type">left the group</p>
+          <p class="notif-group-message">Chess Club</p>
+          <div class="notif-time">2 weeks ago</div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <div class="attribution hidden">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      >Frontend Mentor</a
+    >. Coded by
+    <a href="https://www.frontendmentor.io/profile/fistty" target="_blank"
+      >Osuntuyi Ayomide Amos</a
+    >. View other solutions
+    <a href="https://www.frontendmentor.io/profile/fistty" target="_blank"
+      >here</a
+    >.
+  </div>
+</html>
